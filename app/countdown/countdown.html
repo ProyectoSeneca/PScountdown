@@ -1,0 +1,12 @@
+<div class="row top-margin-spacing">
+    <div class="col-xs-12 text-center">
+        <h1 class="countdown-text" ng-if="secLeft">
+                <span ng-if="secLeft > 86400">
+                    {{secLeft | secondsToDateTime | date:'dd'}} <span class="audio-red">:</span>
+                </span>
+            {{secLeft | secondsToDateTime | date:'HH'}} <span class="audio-red">:</span>
+            {{secLeft | secondsToDateTime | date:'mm'}} <span class="audio-red">:</span>
+            {{secLeft | secondsToDateTime | date:'ss'}}
+        </h1>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+/* app css stylesheet */
+body{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.top-margin-spacing {
+    margin-top: 40px;
+}
+.logo {
+    margin: 0 auto;
+    max-height: 250px
+}
+.slogan-container {
+    background-color: black;
+    color: white;
+}
+.slogan-text {
+    margin: 0;
+    letter-spacing: 0.8em
+}
+.countdown-text {
+    color: black;
+    font-size: 150px;
+}
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .countdown-text {
+        font-size: 100px;
+    }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .countdown-text {
+        font-size: 80px;
+    }
+}
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .countdown-text {
+        font-size: 50px;
+    }
+}
+.audio-red {
+    color: #AD1F24;
+}
+.btn-listen {
+    margin: 0 auto;
+    max-height: 100px;
+    cursor: pointer;
+}
+
+
+
