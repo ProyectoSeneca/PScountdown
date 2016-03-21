@@ -1,12 +1,47 @@
-<div class="row top-margin-spacing">
-    <div class="col-xs-12 text-center">
-        <h1 class="countdown-text" ng-if="secLeft">
-                <span ng-if="secLeft > 86400">
-                    {{secLeft | secondsToDateTime | date:'dd'}} <span class="audio-red">:</span>
-                </span>
-            {{secLeft | secondsToDateTime | date:'HH'}} <span class="audio-red">:</span>
-            {{secLeft | secondsToDateTime | date:'mm'}} <span class="audio-red">:</span>
-            {{secLeft | secondsToDateTime | date:'ss'}}
-        </h1>
+<div class="row top-margin-spacing center-clock" ng-if="secLeft">
+    <div class="col-xs-12 text-center no-padding">
+        <div class="col-xs-offset-2 col-xs-2 no-padding text-right">
+            <div class="col-xs-12 no-padding">
+                <h1 class="countdown-text" ng-if="secLeft > 86400">
+                    {{secLeft | secondsToDateTime | date:'dd'}}
+                </h1>
+                <h1 class="countdown-text" ng-if="secLeft <= 86400">
+                    00
+                </h1>
+            </div>
+            <div class="col-xs-12">
+                <h6 class="no-margin audio-red time-descriptor">días</h6>
+            </div>
+        </div>
+        <div class="col-xs-2 no-padding">
+            <div class="col-xs-12 no-padding">
+                <h1 class="countdown-text">
+                    <span class="audio-red">:</span> {{secLeft | secondsToDateTime | date:'HH'}}
+                </h1>
+            </div>
+            <div class="col-xs-12 text-right">
+                <h6 class="no-margin audio-red time-descriptor">horas</h6>
+            </div>
+        </div>
+        <div class="col-xs-2 no-padding">
+            <div class="col-xs-12 no-padding">
+                <h1 class="countdown-text">
+                    <span class="audio-red audio-red">:</span> {{secLeft | secondsToDateTime | date:'mm'}}
+                </h1>
+            </div>
+            <div class="col-xs-12 text-right">
+                <h6 class="no-margin audio-red time-descriptor">minutos</h6>
+            </div>
+        </div>
+        <div class="col-xs-2 no-padding">
+            <div class="col-xs-12 no-padding">
+                <h1 class="countdown-text">
+                    <span class="audio-red">:</span> {{secLeft | secondsToDateTime | date:'ss'}}
+                </h1>
+            </div>
+            <div class="col-xs-12 text-right">
+                <h6 class="no-margin audio-red time-descriptor">segundos</h6>
+            </div>
+        </div>
     </div>
 </div>

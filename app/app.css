@@ -14,12 +14,14 @@ body{
     color: white;
 }
 .slogan-text {
-    margin: 0;
-    letter-spacing: 0.8em
+    margin-top: 2px;
+    margin-bottom: 2px;
+    letter-spacing: 0.8em;
+    font-size: 16px;
 }
 .countdown-text {
     color: black;
-    font-size: 150px;
+    font-size: 130px;
 }
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -30,7 +32,7 @@ body{
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
     .countdown-text {
-        font-size: 80px;
+        font-size: 60px;
     }
 }
 /* Portrait phones and smaller */
@@ -46,6 +48,18 @@ body{
     margin: 0 auto;
     max-height: 100px;
     cursor: pointer;
+}
+.no-padding {
+    padding: 0;
+}
+.center-clock {
+    margin-right: 20px;
+}
+.no-margin {
+    margin: 0;
+}
+.time-descriptor {
+    font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 

@@ -12,6 +12,7 @@ angular.module('PSCounter.countdown', ['ngRoute'])
     .controller('CountdownCtrl', ['$scope', '$interval', '$location',
         function($scope, $interval, $location) {
             var lunchingDateTime = new Date(2016, 2, 28, 12);
+
             var updateDate = function(){
                 var today = new Date();
                 $scope.secLeft = (lunchingDateTime.getTime() - today.getTime())/ 1000;
